@@ -18,7 +18,7 @@ export default function Messages() {
       }, [data.chatId]);
 
     return (
-        <div className="h-full w-full flex flex-col justify-end p-5 overflow-y-auto">
+        <div className="h-fit w-full flex flex-col mt-auto overflow-y-scroll">
             {messages.map((m) => (
                 <Message message={m} key={m.id} />
             ))}

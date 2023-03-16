@@ -74,7 +74,7 @@ export default function Register() {
     }
     
     return (
-        <div className="border-[3px] border-neutral-500 text-neutral-600 p-6 flex flex-col gap-6 rounded-lg w-2/6">
+        <div className="max-sm:w-4/5 max-lg:w-3/5 border-[3px] border-neutral-500 text-neutral-600 p-6 flex flex-col gap-6 rounded-lg w-2/6">
             {loading && 
             <div className='absolute' role="status">
                 <span className='text-center'>Loading</span>
@@ -84,6 +84,7 @@ export default function Register() {
                 </svg>
             </div>
             }
+            <h1 className="sm:hidden text-2xl font-semibold text-center text-orange-600">Chatting</h1>
             <h1 className="text-center text-2xl font-semibold">Register</h1>
             <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8">
                 <input className={inputClass} required placeholder="Nick Name" type="text" />

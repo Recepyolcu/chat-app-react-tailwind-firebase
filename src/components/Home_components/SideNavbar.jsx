@@ -11,11 +11,11 @@ export default function SideNavbar() {
     const [ showMenu, setShowMenu ] = useState(false);
     const { currentUser } = useContext(AuthContext);
     return (
-        <div className="max-sm:p-0 max-md:px-0 max-md:pb-0 flex gap-4 p-5 w-full justify-between bg-gray-300 border-b-[3px] border-neutral-800">
+        <div className="max-sm:hidden max-sm:p-0 max-md:px-0 max-md:pb-0 flex gap-4 p-5 w-full justify-between bg-gray-300 border-b-[3px] border-neutral-800">
             <div className="max-sm:items-start max-lg:flex-col flex justify-between items-center gap-5 w-full">
                 <div className="max-sm:w-full max-sm:flex-row max-sm:px-5 max-sm:py-5 max-lg:flex-col max-lg:gap-2 flex items-center gap-5">
                     <img className="w-12 h-12 rounded-full object-cover" src={currentUser.photoURL} alt="avatar" />
-                    <span className="max-sm:text-2xl max-sm:ml-4 text-lg font-medium">{currentUser.displayName}</span>
+                    <span className="max-sm:text-2xl max-sm:ml-4 text-xl font-semibold">{currentUser.displayName}</span>
                     <button onClick={() => setShowMenu(show => !show)} className="sm:hidden ml-auto">
                         <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />

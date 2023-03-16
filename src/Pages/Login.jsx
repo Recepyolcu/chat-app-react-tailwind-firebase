@@ -25,7 +25,8 @@ export default function Login() {
     }
 
     return (
-        <div className="border-2 border-neutral-500 text-neutral-600 p-6 flex flex-col gap-6 rounded-xl w-2/6">
+        <div className="max-sm:w-4/5 max-lg:w-3/5 border-2 border-neutral-500 text-neutral-600 p-6 flex flex-col gap-6 rounded-xl w-2/6">
+            <h1 className="sm:hidden text-2xl font-semibold text-center text-orange-600">Chatting</h1>
             <h1 className="text-center text-2xl font-semibold">Sign in</h1>
             <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8">
                 <input className={inputClass} placeholder="example@gmail.com" type="email" />

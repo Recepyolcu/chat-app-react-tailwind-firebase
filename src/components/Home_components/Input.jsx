@@ -58,8 +58,6 @@ export default function Input() {
                 [data.chatId + ".lastMessage"]: { text }, [data.chatId + ".date"]: serverTimestamp(),
             });
 
-            console.log();
-        
             setText("");
             setImg(null);
         };
